@@ -1,0 +1,6 @@
+
+docker build -t test .
+docker build --no-cache -t test -f u12_core .
+docker run -it --rm -v C:\Labas\FrontEnd\Lab1\Source -p 7777:1234 -e CHOKIDAR_USEPOLLING=true test
+
+http://localhost:7777/
